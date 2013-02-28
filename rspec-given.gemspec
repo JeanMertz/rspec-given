@@ -1,5 +1,5 @@
 $:.push File.expand_path("../lib", __FILE__)
-require "given/version"
+require "rspec/given/version"
 
 Gem::Specification.new do |s|
   s.name = 'rspec-given'
