@@ -4,7 +4,7 @@
 | :----: |
 | [![Master Build Status](https://secure.travis-ci.org/jimweirich/rspec-given.png?branch=master)](https://travis-ci.org/jimweirich/rspec-given) |
 
-Covering rspec-given, version 2.4.0.
+Covering rspec-given, version 2.4.1.
 
 rspec-given is an RSpec extension to allow Given/When/Then notation in
 RSpec specifications.  It is a natural extension of the experimental
@@ -644,6 +644,19 @@ file:
     RSpec::Given.use_natural_assertions :always # Always process natural assertions
                                                 # ... even when should/expect are detected
 ```
+
+# History
+
+* Version 2.4.1
+
+  * Fix bug where constants from nested modules were not properly
+    accessed.
+
+* Version 2.4.0
+
+  * Add fuzzy number helper methods (with unicode method shortcuts).
+
+  * Fix bug caused by blank lines in Thens.
 
 # Links
 
